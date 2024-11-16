@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".UserSignUp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Login"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/usernameet"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="textPersonName"
+        android:hint="Enter Username" />
+
+    <EditText
+        android:id="@+id/passwordet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:hint="Enter Password"
+        app:layout_constraintTop_toBottomOf="@+id/usernameet" />
+    <EditText
+        android:id="@+id/emailet"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"
+        android:hint="Enter Email" />
+
+    <EditText
+        android:id="@+id/phonenoet"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="phone"
+        android:hint="Enter Phoneno" />
+    <Button
+        android:id="@+id/providerlogin"
+        android:layout_width="match_parent"
+        android:background="@drawable/buttondesign"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:onClick="usersignup"
+        app:layout_constraintTop_toBottomOf="@+id/passwordet" />
+
+
+
+</LinearLayout>
